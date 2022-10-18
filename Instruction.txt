@@ -1,0 +1,25 @@
+Intitial configuration:
+
+
+1) Add in Gemfile and bundle:
+
+    gem "cocoon"
+
+
+
+2) In the terminal:
+
+    yarn add @nathanvda/cocoon
+
+
+
+3) Add in app/javascrip/application.js
+
+    import "@nathanvda/cocoon"
+
+
+
+4) Add jQuery in app/view/layouts/application.html.erb
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+

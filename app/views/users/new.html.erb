@@ -1,0 +1,26 @@
+<%= form_for(@user) do |form| %>
+  <br>
+  <br>
+  <div>
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div>
+      <%= form.fields_for :friends do |t| %>
+        <%= render "friend_fields", :f => t %>
+      <% end %>
+      
+      <div>
+        <br>
+        <%= link_to_add_association "Add Friend", form, :friends %> <!-- (*) -->
+      </div>
+    </div>
+    
+    <div>
+      <br>
+      <%= form.submit %>
+    </div>
+  </div>
+<% end %>
